@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/background_with_white_overlay">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="105">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5">
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="25"
+            android:weightSum="100">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30">
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                app:srcCompat="@drawable/profile" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30">
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="60"
+            android:weightSum="100">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10">
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="80"
+                android:weightSum="105">
+
+                <TextView
+                    android:id="@+id/fullNameTextViews"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textSize="35sp"
+                    android:text="TextView"
+                    android:gravity="center"
+                    android:layout_weight="20"/>
+
+
+                <TextView
+                    android:id="@+id/emailTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="TextView"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:layout_weight="10"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="10"/>
+
+                <TextView
+                    android:id="@+id/txtSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Settings"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_weight="10"/>
+
+                <Button
+                    android:id="@+id/btnChangePW"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Change Password"
+                    android:layout_weight="15"
+                    android:drawableLeft="@drawable/account_icon"
+                    android:textColor="@color/custom_black"
+                    android:backgroundTint="@color/input_grey"
+                    android:textSize="15dp"
+                    android:onClick="changePW"/>
+
+                <Button
+                    android:id="@+id/btnUpdateAccountDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Update Account Details"
+                    android:layout_weight="15"
+                    android:backgroundTint="@color/input_grey"
+                    android:drawableLeft="@drawable/privacy_icon"
+                    android:textColor="@color/custom_black"
+                    android:onClick="updateDetails"
+                    android:textSize="15dp"/>
+
+                <Button
+                    android:id="@+id/btnFAQs"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="FAQs"
+                    android:layout_weight="15"
+                    android:backgroundTint="@color/input_grey"
+                    android:drawableLeft="@drawable/faq_icon"
+                    android:textColor="@color/custom_black"
+                    android:textSize="15dp"
+                    android:onClick="openFAQs"/>
+
+                <TextView
+                    android:id="@+id/txtLogOut"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Logout"
+                    android:layout_weight="10"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:onClick="logoutTextView"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10">
+
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/btnMap"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Map"
+                android:textColor="@color/custom_black"
+                android:drawableTop="@drawable/map"
+                android:backgroundTint="@color/white"
+                style="?android:attr/borderlessButtonStyle"
+                android:onClick="mapScreen"/>
+
+            <Button
+                android:id="@+id/btnCourse"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="@color/custom_black"
+                android:text="Course"
+                android:drawableTop="@drawable/course"
+                android:backgroundTint="@color/white"
+                style="?android:attr/borderlessButtonStyle"
+                android:onClick="courseScreen"/>
+
+            <Button
+                android:id="@+id/btnForum"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Forum"
+                android:textColor="@color/custom_black"
+                android:drawableTop="@drawable/forum"
+                android:backgroundTint="@color/white"
+                style="?android:attr/borderlessButtonStyle"
+                android:onClick="forumScreen"/>
+
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="Profile"
+                android:textColor="@color/custom_black"
+                android:drawableTop="@drawable/profile"
+                android:backgroundTint="@color/white"
+                style="?android:attr/borderlessButtonStyle"
+                android:onClick="profileScreen"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

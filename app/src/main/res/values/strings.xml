@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">SCSE Buddy</string>
+    <string name="skip_login">
+        <u>Skip Login</u>
+    </string>
+    <string name="forgot_password">
+        <u>Forgot Password?</u>
+    </string>
+    <string name="create_account">
+        <u>Create Account</u>
+    </string>
+    <string name="searched_by">
+        You\'ve searched by &lt;b>\" %1$s \"&lt;/b>
+    </string>
+    <string-array name="sorting_order_spinner_content">
+        <item>Asc</item>
+        <item>Desc</item>
+    </string-array>
+    <string-array name="sorting_course_by_spinner_content">
+        <item>Name</item>
+        <item>Year</item>
+        <item>Code</item>
+    </string-array>
+    <string-array name="sorting_topic_by_spinner_content">
+        <item>Topic</item>
+        <item>Count</item>
+    </string-array>
+
+    <string-array name="grade_by_spinner">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="topic_by_spinner">
+        <item>All</item>
+        <item>News</item>
+        <item>Events</item>
+        <item>Job Opening</item>
+        <item>Self Introduction</item>
+        <item>Course Work Help</item>
+        <item>Lost And Found</item>
+        <item>Looking For Groups</item>
+        <item>Survey</item>
+        <item>Index Swap</item>
+    </string-array>
+
+    <string-array name="courseReview_spinner">
+        <item>Date</item>
+        <item>Grade</item>
+    </string-array>
+</resources>

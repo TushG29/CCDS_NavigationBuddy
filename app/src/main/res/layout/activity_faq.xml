@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FAQActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="100">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"></FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:background="@drawable/create_account_background"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="90"
+                android:weightSum="100"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"/>
+
+                <TextView
+                    android:id="@+id/faqTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="FAQ"
+                    android:layout_weight="10"
+                    android:textSize="25sp"
+                    android:gravity="center"
+                    android:fontFamily="@font/aileron_black"
+                    android:textColor="@color/custom_black"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"/>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Q: Who made this application?"
+                    android:layout_weight="10"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/aileron_black"
+                    android:textColor="@color/custom_black"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="30"
+                    android:fontFamily="@font/aileron_black"
+                    android:gravity="center_vertical"
+                    android:text="A: It was jointly developed by Team JJKT\n
+                    (J)ia Ze, Ang\n
+                    (J)iayun, Mo\n
+                    (K)ristiyan Cholakov\n
+                    (T)heodore Tan"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:id="@+id/faqImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="40"
+                    android:background="@drawable/photofar"
+                    android:visibility="invisible"/>
+
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"/>
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Map"
+            android:textColor="@color/custom_black"
+            android:drawableTop="@drawable/map"
+            android:backgroundTint="@color/white"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="mapScreen"/>
+
+        <Button
+            android:id="@+id/btnCourse"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textColor="@color/custom_black"
+            android:text="Course"
+            android:drawableTop="@drawable/course"
+            android:backgroundTint="@color/white"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="courseScreen"/>
+
+        <Button
+            android:id="@+id/btnForum"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Forum"
+            android:textColor="@color/custom_black"
+            android:drawableTop="@drawable/forum"
+            android:backgroundTint="@color/white"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="forumScreen"/>
+
+        <Button
+            android:id="@+id/btnProfile"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Profile"
+            android:textColor="@color/custom_black"
+            android:drawableTop="@drawable/profile"
+            android:backgroundTint="@color/white"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="profileScreen"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
