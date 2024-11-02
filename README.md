@@ -14,3 +14,15 @@ Note: The School of Computer Science and Engineering (SCSE) has been changed to 
   4. A pdf containing the Use-Case descriptions
   5. A video showcasing the UI mockup of the mobile application
 
+
+## References
+1. Introduction to Software Engineering Design: Processes, Principles and Patterns with UML2 – C. Fox
+2. Object-Oriented Software Engineering: Using UML, Patterns and Java – B. Bruegge and A. Dutoit
+   - Chapter 10 – Mapping Models to Code
+   - Chapter 11 - Testing
+3. Javadoc
+   - http://en.wikipedia.org/wiki/Javadoc#Structure_of_a_Javadoc_comment
+   - A more technical treatment on the Oracle Javadoc Home Page - http://www.oracle.com/technetwork/java/javase/documentation/index-jsp-135444.html
+4. JUnit
+   - See section 4 of http://supportweb.cs.bham.ac.uk/documentation/tutorials/docsystem/build/tutorials/ju nit/junit.pdf
+   - A more technical treatment at http://junit.sourceforge.net/junit3.8.1/doc/cookbook/cookbook.htm
