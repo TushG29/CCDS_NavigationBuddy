@@ -9,10 +9,11 @@ Note: The School of Computer Science and Engineering (SCSE) has been changed to 
 
 ## The github repository contains
   1. The relevant code for the project
-  2. A pdf containing the data dictionary of terms related to NTU CCDS
-  3. A pdf containing the elicit and document requirements
-  4. A pdf containing the Use-Case descriptions
-  5. A video showcasing the UI mockup of the mobile application
+  2. A folder containing pdfs of the 5 labs conducted during the course and project description. 
+  3. A pdf containing the data dictionary of terms related to NTU CCDS
+  4. A pdf containing the elicit and document requirements
+  5. A pdf containing the Use-Case descriptions
+  6. A video showcasing the UI mockup of the mobile application
 
 
 ## References
